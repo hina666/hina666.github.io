@@ -1,0 +1,419 @@
+@import url(reset.css);
+/*=============Фон боди==================*/
+body{
+	background-image:url('../img/bgcolor3.jpg') ;
+	background-color:#f8f8f8;
+	
+}
+
+.wrapper{
+	max-width: 900px;
+	margin:0 auto;
+	background-image:url('../img/bacgbody.png');
+	background-repeat:no-repeat;	
+	/*border:1px solid grey;*/
+	
+	
+}
+header{
+	width:900px;
+	height:820px;
+	position: relative;
+/*border:1px solid grey;*/
+	
+}
+.clear{
+	clear:both;
+}
+/*=========навигация вв верху============*/
+.c3{
+	width:250px;
+	float:left;
+	font-family:'Raleway', sans-serif;
+	text-transform: uppercase;
+	/*border:1px solid grey;*/
+	font-size:14pt;
+	padding-left:20px;
+	padding-top:25px;
+}
+
+.c3 a{
+	text-decoration: none;
+	color: #474747;
+
+}
+.c3 a:hover{
+	color: #17c3d2;
+}
+.nav{
+	width: 400px;
+	float:right;
+	font-family: 'Raleway', sans-serif;
+	font-size:14pt;
+	text-transform: uppercase;
+	/*border:1px solid grey;*/
+	
+	padding-top:25px;
+	
+}
+.nav li{
+	float: left;
+	padding-left:21.5px;
+}
+.nav li a{
+	text-decoration: none;
+	color: #474747;
+}
+.nav a.active, .nav li a:hover{
+	color: #ec6464;
+}
+
+/*==========логотип в верху===============*/
+.logo{
+	margin-top:230px;
+	margin-left:365px;
+	position: absolute;
+}
+
+/*===================артикл=====================*/
+.blockkarusel{
+	width:900px;
+	height:820px;
+	background-color:#f4f2f2;
+	/*border:1px solid grey;=*/
+}
+ h2{
+	font-family:'Quicksand', sans-serif;
+	font-weight:500;
+	font-size:20pt;
+	color:#474747;
+	text-align:center;
+	padding-bottom:10px;
+}
+.article{
+	color:#595959;
+	font-family:'Raleway', sans-serif;
+	font-size:16pt;
+	word-spacing: 3,5px;
+	width:860px;
+	height:150px;
+	padding-left:20px;
+	padding-right:20px;
+	padding-top:25px;
+	text-align:justify;
+	
+	/*border:1px solid grey;=*/
+	
+}
+
+/*=================Отзывы=======================*/
+.otzyvy{
+	
+	width:900px;
+	height:820px;
+	background-color:#e8e8e8;
+	/*border:1px solid grey;=*/
+} 
+h3{
+	font-family:'Quicksand', sans-serif;
+	font-weight:500;
+	font-size:20pt;
+	color:#474747;
+	text-align:center;
+	padding-top:25px;
+}
+.client1{
+	width:200px;
+	height:200px;
+	/*border:1px solid grey;=*/
+	float:left;
+	margin-top:20px;
+	margin-bottom:22px;
+	margin-left:20px;
+} 
+.comment1{
+	width:640px;
+	height:200px;
+	/*border:1px solid grey;*/
+	float:right;
+	margin-top:20px;
+	margin-bottom:22px;
+	margin-right:20px;
+	color:#595959;
+	font-family:'Raleway', sans-serif;
+	font-size:16pt;
+	word-spacing: 3,5px;
+	text-align:justify;
+}
+.client2{
+	width:200px;
+	height:200px;
+	/*border:1px solid grey;=*/
+	float:right;
+	margin-top:10px;
+	margin-bottom:22px;
+	margin-right:20px;
+} 
+.comment2{
+	width:640px;
+	height:200px;
+	/*border:1px solid grey;=*/
+	float:left;
+	margin-top:10px;
+	margin-bottom:22px;
+	margin-left:20px;
+	color:#595959;
+	font-family:'Raleway', sans-serif;
+	font-size:16pt;
+	word-spacing: 3,5px;
+	text-align:justify;
+}
+.client3{
+	width:200px;
+	height:200px;
+	/*border:1px solid grey;=*/
+	float:left;
+	margin-top:10px;
+	margin-bottom:22px;
+	margin-left:20px;
+} 
+.comment3{
+	width:640px;
+	height:200px;
+	/*border:1px solid grey;=*/
+	float:right;
+	margin-top:10px;
+	margin-bottom:22px;
+	margin-right:20px;
+	color:#595959;
+	font-family:'Raleway', sans-serif;
+	font-size:16pt;
+	word-spacing: 3,5px;
+	text-align:justify;
+}
+.nameclient{
+	padding-bottom:5px;
+	color:#38a3ac;
+}
+ .round {
+    border-radius: 100px; /* Радиус скругления */
+   }
+   
+/*===================Форма=====================*/
+.wrapperforma{
+	
+	width:900px;
+	height:820px;
+	background-color:#f4f2f2;
+	/*border:1px solid grey;*/
+	
+}
+.formatext{
+	width:575px;
+	height:370px;
+	/*border:1px solid grey;*/
+	margin-left:20px;
+	margin-top:60px;
+	float:left;
+	
+}
+.formatext h4{
+	font-family:'Quicksand', sans-serif;
+	font-weight:500;
+	font-size:20pt;
+	color:#474747;
+	padding-top:5px;
+	padding-bottom:10px;
+}
+.formatext p{
+	color:#595959;
+	font-family:'Raleway', sans-serif;
+	font-size:16pt;
+	word-spacing: 3,5px;
+	text-align:justify;
+	padding-bottom:10px;
+}
+.forma{
+	width:250px;
+	height:370px;
+	/*border:1px solid grey;*/
+	margin:60px 25px 25px 20px;
+	color:#595959;
+	font-family:'Raleway', sans-serif;
+	font-size:14pt;
+	word-spacing: 3,5px;
+	padding:5px 0 5px 5px;
+	float:right;
+	border-radius: 15px;
+	background-color:#f0f0f0;
+	border:1px solid #b3b3b3;
+	
+	/*background-image:url('../img/bcgform.png');*/
+
+}
+.data{
+	width:240px;
+}
+input{
+	width:240px;
+	height:30px;
+	background-color:#f8f8f8;
+	border-radius: 20px; 
+	border:1px solid #b3b3b3;
+	padding-left:5px;
+}
+.buttom{
+	width:84px;
+	height:32px;
+	border-radius: 100px; 
+	margin:auto 75px;
+}
+.name, .phone, .emale, .date{
+	color:#595959;
+	font-family:'Raleway', sans-serif;
+	font-size:12pt;
+	word-spacing: 3px;
+
+}
+.polya{
+	margin:10px auto;
+	font-size:14pt;
+	font-family:'Quicksand', sans-serif;
+	color:#474747;
+	font-weight:500;
+}
+.p1, .p3{
+	font-family:'Quicksand', sans-serif;
+	color:#474747;
+	font-weight:500;
+	margin-top:10px;
+	
+}
+.p2{
+	margin-bottom:5px;
+}
+.date .p1{
+margin-bottom:5px;
+}
+.phone .p3{
+	margin-bottom:5px;
+}
+.data{
+	margin-bottom:10px;
+}
+
+/*==================соцсети======================*/
+.clear{
+	clear:both;
+}
+.socseti{
+	width:200px;
+	margin-left:20px;
+	margin-right:10px;
+	/*border:1px solid grey;*/
+}
+.textsocseti{
+	width:855px;
+	color:#595959;
+	font-family:'Raleway', sans-serif;
+	font-size:16pt;
+	word-spacing: 3,5px;
+	text-align:justify;
+	margin:60px 20px 20px 20px;
+	/*border:1px solid grey;*/
+}
+/*==================навигация в низу======================*/
+.nav2{
+	width: 400px;
+	float:left;
+	font-family: 'Raleway', sans-serif;
+	font-size:14pt;
+	text-transform: uppercase;
+	/*border:1px solid grey;*/
+	padding-top:25px;
+	margin-bottom:10px;
+	
+}
+.nav2 li{
+	float: left;
+	padding-left:21.5px;
+}
+.nav2 li a{
+	text-decoration: none;
+	color: #474747;
+}
+.nav2 a.active, .nav2 li a:hover{
+	color: #ec6464;
+}
+.logo2{
+	margin-bottom:50px;
+	margin-top:50px;
+	margin-left:365px;
+	
+}
+.copyr{
+	
+	font-family: 'Raleway', sans-serif;
+	font-size:12pt;
+	
+	text-align:left;
+	margin-top:5px;
+	margin-left:20px;
+	color: #858585;
+}
+
+.tel{
+	position: fixed;
+	top:830px;
+	right:50px;
+	box-shadow: 0 0 10px #ff6f6f;
+	border-radius: 100px;
+}
+/*==================навигация в низу======================*/
+.logo{
+	
+}
+/*=============КАРУСЕЛЬКА==========*/
+
+      .example-desc {
+        margin:3px 0;
+        padding:5px;
+      }
+
+      #carousel {
+        width:800px;
+        margin: 60px auto;
+        border:1px solid #222 transparent;
+        height:400px;
+        position:relative;
+        clear:both;
+        overflow:hidden;
+       /*background-color: rgba(0,0,0,0.2);*/
+      }
+      #carousel img {
+        visibility:hidden; /* hide images until carousel can handle them */
+        cursor:pointer; /* otherwise it's not as obvious items can be clicked */
+      }
+
+      .split-left {
+        width:550px;
+        float:left;
+      }
+      .split-right {
+        width:550px;
+        float:left;
+        margin-left:10px;
+      }
+      #callback-output {
+        height:250px;
+        overflow:scroll;
+      }
+      textarea#newoptions {
+        width:430px;
+      }
+      
+/*=======================*/
+@media screen and (max-width: 600px){
+	
+	img { width: 100%;}
+}

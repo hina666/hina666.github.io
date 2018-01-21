@@ -1,0 +1,184 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>landing</title>
+<link href="css/style.css" type="text/css" rel="stylesheet">
+<!-- 1. Link to jQuery (1.8 or later), -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <!-- 33 KB -->
+<link href="https://fonts.googleapis.com/css?family=Quicksand|Raleway|Rubik" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Rubik:400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic,hebrew,latin-ext" rel="stylesheet">
+<!-- fotorama.css & fotorama.js. -->
+<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
+<link rel="stylesheet" href="css/animate.css">
+<script src="https://yastatic.net/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.waterwheelCarousel.js"></script>
+<script type="text/javascript">
+      $(document).ready(function () {
+        var carousel = $("#carousel").waterwheelCarousel({
+          flankingItems: 3,
+          movingToCenter: function ($item) {
+            $('#callback-output').prepend('movingToCenter: ' + $item.attr('id') + '<br/>');
+          },
+          movedToCenter: function ($item) {
+            $('#callback-output').prepend('movedToCenter: ' + $item.attr('id') + '<br/>');
+          },
+          movingFromCenter: function ($item) {
+            $('#callback-output').prepend('movingFromCenter: ' + $item.attr('id') + '<br/>');
+          },
+          movedFromCenter: function ($item) {
+            $('#callback-output').prepend('movedFromCenter: ' + $item.attr('id') + '<br/>');
+          },
+          clickedCenter: function ($item) {
+            $('#callback-output').prepend('clickedCenter: ' + $item.attr('id') + '<br/>');
+          }
+        });
+
+        $('#prev').bind('click', function () {
+          carousel.prev();
+          return false
+        });
+
+        $('#next').bind('click', function () {
+          carousel.next();
+          return false;
+        });
+
+        $('#reload').bind('click', function () {
+          newOptions = eval("(" + $('#newoptions').val() + ")");
+          carousel.reload(newOptions);
+          return false;
+        });
+
+      });
+    </script>
+</head>
+<body>
+
+<div class="wrapper">
+	<!--  header 
+	- логотип (создать логотип для страницы)
+	- меню 
+
+	 -->
+	 <div class="clear"></div>
+	 <header>
+		<!-- - логотип (создать логотип для страницы) -->
+		<div class="c3" alt="название фирмы">
+        <a href="#about"><h1>Conceptual club cube</h1></a></div>
+		<div class="nav"><nav>
+			<ul>
+				<li id="home"><a href="#home">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#reviews">Reviews</a></li>
+				<li><a href="#contact us">Сontact</a></li>
+			</ul>
+		</nav></div>
+
+	 <div class="logo animated pulse  ">
+			<a href="#about"><img src="img/logo.png" alt="что-то про нашу фирму :)"></a>
+		</div>
+		
+	 </header>
+
+	 
+	 <!-- content
+	- "каруселька"
+	- статья (статьи)
+	- отзывы "благодарных" клиентов
+	- форма обратной связи
+	 
+	 -->
+	 <main>
+		
+		</section> 
+		<article class="blockkarusel">
+		<a href="#form"><img src="img/tel.png" alt="оператор" class="tel animated pulse infinite"></a>
+		<!-- выбрать шрифт для заголовка -->
+			<div class="article" id="about"><h2>Who are we???</h2>
+			<p>We are the creative team.
+			We C3. What does C3 mean? Conceptual club cube.We will do for any design work. We will create for you any site. 
+			And we will capture all your bright emotions. We will realize all your most secret, most insane, and most vivid ideas. On our account there are a lot of orders, a huge number of clients for whom we have implemented the craziest ideas.</p>
+			</div>
+			<section class="karusel">
+		<div id="carousel">
+      <a href="#"><img src="img/1.jpg" id="item-6" width="500px"/></a>
+      <a href="#"><img src="img/2.jpg" id="item-7" width="500px" /></a>
+      <a href="#"><img src="img/3.jpg" id="item-8" width="500px"/></a>
+     </div></section></article>
+		<!-- найти изображение клиентов -->
+		<section class="otzyvy" id="reviews">
+			
+					<h3>Customer comments</h3>
+					<div class="client1"><img src="img/client1.png" alt="клиент 1"  class="round"></div>
+					<div class="comment1"><p class="nameclient">HOLLY</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a luctus sapien. Duis aliquam, leo ut sodales sagittis, diam turpis laoreet nisl, eget condimentum dui leo placerat purus. Vestibulum metus nisi, dapibus fringilla lorem eget, accumsan facilisis erat. Suspendisse fermentum faucibus diam id luctus. Aliquam vitae ex egestas, semper sapien at, commodo velit.Nulla auctor gravida mauris, quis tempor ex sollicitudin a. Praesent consequat blandit nisl a maximus.  </p></div>
+				
+				
+					<div class="comment2"><p class="nameclient">NOAH</p><p>Nullam congue non lacus quis blandit. Phasellus eu euismod nisi, non rutrum quam. Morbi sem velit, imperdiet sit amet ornare elementum, interdum at arcu. In dictum vulputate justo, sed vehicula purus ultricies non. Morbi pulvinar purus leo, ut consequat tortor interdum non. Duis pharetra diam sem, at molestie tortor viverra quis. Vestibulum vitae lobortis risus. Maecenas accumsan vel eros et lacinia. Aliquam semper dolor id nibh faucibus malesuada. </p></div>
+					<div class="client2"><img src="img/client2.png" alt="клиент 2"  class="round"></div>
+			
+					<div class="client3"><img src="img/client3.png" alt="клиент 1"  class="round"></div>
+					<div class="comment3"><p class="nameclient">ROSE</p><p>Nulla facilisi. Nullam in eros enim. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis lacinia non sapien in faucibus. Vivamus molestie mattis sapien a blandit. Aliquam tempus tortor sed ultrices auctor. Morbi varius fermentum velit non dignissim. Duis sit amet pulvinar ipsum, non accumsan justo. Praesent nunc massa, finibus a imperdiet vel, dapibus vitae diam.Nulla auctor gravida mauris, quis tempor ex sollicitudin a. Praesent consequat blandit nisl a maximus. </p></div>
+		</section>
+		
+		<section class="wrapperforma">
+			<div class="formatext"><h4 id="contact us">Contact us.</h4>
+				<p>You can contact us in two ways. The first one is to fill out the form, after sending it you will receive a letter from us and we will contact you. The second is to click on the pulsating circle with a bell, after which the call will go straight to our office.</p>
+				<p>Another way to contact us, if you live in the same city where our office is located, you can call the secretary and find out the address of our office, come and talk straight with the creator.</p>
+				<p>And as you can trust all the work on changing, making changes to your project to our managers, they will monitor the work process, alert you about all the stages of work.</p>
+				<p> We are always glad to our regular customer and those who first joined us.</p></div>
+			<div class="forma"><form action="formd.php" method="POST" name="meform" id="form">
+			<legend class="polya">Fill the form</legend>
+			<label class="name">
+			<p class="p1">Your Name</p><p class="p2">(no more than 10 characters)</p> 
+			<input type="text" maxlength="10" size="30" name="name_form" pattern="[a-zA-z0-9]+" placeholder="There must be your name" required>
+			</label>
+			<label for="phonenum" class="phone"><p class="p3">Your phone number</p>
+			<p><input type="tel" pattern="^+\d{4}\d{3}\d{4}$" name="name_tell" placeholder="+375xxxxxxxxx" size="30"><p></label>
+			<label class="emale">
+			<p class="p1">Your email</p><p class="p2">(up to 25 characters)</p> 
+			<input type="email" maxlength="25" size="30" name="name_email" placeholder="Here should be your email">
+			</label>
+			<label class="date">
+			<p class="p1">Time and date of call </p>  
+			<input type="datetime-local" value="2018-01-01T22:30" class="data"/></label>
+			<label ><p><input type="image" src="img/blueButton.png" class="buttom"></p></label></form></div>
+			<div class="clear"></div>
+			<div class="textsocseti"><p>Also you can write to us on social networks, our managers will contact you within five minutes and will advise you on your questions.</p></div>
+			<div class="socseti"><a href="https://vk.com" target="_blank" title="Vk"> 
+			<img src="img/vk.png"  alt="вконтакте"></a>
+		<a href="https://twitter.com" target="_blank" title="Twitter">
+			<img src="img/tw.png"  alt="твитер"></a>
+		<a href="https://www.facebook.com/" target="_blank" title="Facebook"> 
+			<img src="img/fb.png"  alt="фейсбук"></a></div>
+		</section>
+	 </main>
+	 
+	 <!-- footer
+
+	 -копирайт 
+	- меню 
+	- логотип 
+	 -->
+	 <footer>
+		<!-- - логотип (создать логотип для страницы) -->
+		<div class="logo2 animated ">
+			<a href="#about"><img src="img/logo2.png" alt="что-то про нашу фирму :)"></a>
+		</div>
+		<nav class="nav2">
+			<ul>
+				<li id="home"><a href="#home">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#reviews">Reviews</a></li>
+				<li><a href="#contact us">Сontact</a></li>
+			</ul>
+		</nav>
+		<div class="clear"></div>
+		<div class="copyr">
+			<p>Данный сайт мой, разработан мной и защищен мной 2018</p>
+		</div>
+	 </footer>
+</div>
+</body>
+</html>
